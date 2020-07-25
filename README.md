@@ -1,4 +1,4 @@
-# Very short description of the package
+# Blade Ionicons
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/faisal50x/blade-ionicons.svg?style=flat-square)](https://packagist.org/packages/faisal50x/blade-ionicons)
 [![Build Status](https://img.shields.io/travis/faisal50x/blade-ionicons/master.svg?style=flat-square)](https://travis-ci.org/faisal50x/blade-ionicons)
@@ -68,19 +68,12 @@ composer test
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
 ### Security
 
 If you discover any security related issues, please email foysal20x@gmail.com instead of using the issue tracker.
 
-## Credits
-
-- [Faisal Ahmed](https://github.com/faisal50x)
-- [All Contributors](../../contributors)
-
+## Maintainer
+Blade Ionicons is developed and maintained by [Faisal Ahmed](https://linkedin.com/in/Faisal50x)
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
