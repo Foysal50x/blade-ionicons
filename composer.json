@@ -1,0 +1,58 @@
+{
+    "name": "faisal50x/blade-ionicons",
+    "description": "A package to easily make use of ionicons in your Laravel Blade views.",
+    "keywords": [
+        "Blade",
+        "faisal50x",
+        "blade-ionicons",
+        "ionicons",
+        "laravel"
+    ],
+    "homepage": "https://github.com/faisal50x/blade-ionicons",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Faisal Ahmed",
+            "email": "foysal20x@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^7.14.0",
+        "blade-ui-kit/blade-icons": "^0.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Faisal50x\\BladeIonicons\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Faisal50x\\BladeIonicons\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Faisal50x\\BladeIonicons\\BladeIoniconsServiceProvider"
+            ],
+            "aliases": {
+                "BladeIonicons": "Faisal50x\\BladeIonicons\\BladeIoniconsFacade"
+            }
+        }
+    }
+}
