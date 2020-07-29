@@ -72,8 +72,11 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 
 If you discover any security related issues, please email foysal20x@gmail.com instead of using the issue tracker.
 
-## Maintainer
+## Maintainers
 Blade Ionicons is developed and maintained by [Faisal Ahmed](https://linkedin.com/in/Faisal50x)
+
+- [All Contributors](../../contributors)
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
