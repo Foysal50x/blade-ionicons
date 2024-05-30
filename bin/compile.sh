@@ -6,7 +6,7 @@ DIRECTORY=$(cd `dirname $0` && pwd)
 ICONS=$DIRECTORY/../dist
 RESOURCES=$DIRECTORY/../resources/svg
 
-echo "Compiling Iondicons..."
+echo "Compiling Ionicons..."
 
 for FILE in $ICONS/*; do
   FILENAME=${FILE##*/}
