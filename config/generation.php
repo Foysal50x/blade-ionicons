@@ -20,8 +20,8 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFi
                 }
 
                 if (
-                    !Str::of($svgAsString)->contains(['fill'])
-                    && !Str::of($svgAsString)->contains(['stroke'])
+                    ! Str::of($svgAsString)->contains(['fill'])
+                    && ! Str::of($svgAsString)->contains(['stroke'])
                 ) {
                     $svgEL->setAttribute('fill', 'currentColor');
                 }
@@ -31,8 +31,8 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFi
                     $svgEL->setAttribute('fill', 'currentColor');
                 }
                 if (
-                    !Str::of($svgAsString)->contains(['fill'])
-                    && !Str::of($svgAsString)->contains(['stroke'])
+                    ! Str::of($svgAsString)->contains(['fill'])
+                    && ! Str::of($svgAsString)->contains(['stroke'])
                 ) {
                     $svgEL->setAttribute('fill', 'currentColor');
                 }
@@ -43,8 +43,8 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFi
                     $svgEL->setAttribute('fill', 'currentColor');
                 }
                 if (
-                    !Str::of($svgAsString)->contains(['fill'])
-                    && !Str::of($svgAsString)->contains(['stroke'])
+                    ! Str::of($svgAsString)->contains(['fill'])
+                    && ! Str::of($svgAsString)->contains(['stroke'])
                 ) {
                     $svgEL->setAttribute('fill', 'currentColor');
                 }
