@@ -1,10 +1,9 @@
 <?php
 
-use Illuminate\Support\Str;
 use Codeat3\BladeIconGeneration\IconProcessor;
+use Illuminate\Support\Str;
 
 $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFileInfo $sourceFile) {
-
     // perform generic optimizations
     $iconProcessor = new IconProcessor($tempFilepath, $iconSet, $sourceFile);
     $iconProcessor
@@ -21,8 +20,8 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFi
                 }
 
                 if (
-                    !Str::of($svgAsString)->contains(['fill'])
-                    && !Str::of($svgAsString)->contains(['stroke'])
+                    ! Str::of($svgAsString)->contains(['fill'])
+                    && ! Str::of($svgAsString)->contains(['stroke'])
                 ) {
                     $svgEL->setAttribute('fill', 'currentColor');
                 }
@@ -32,8 +31,8 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFi
                     $svgEL->setAttribute('fill', 'currentColor');
                 }
                 if (
-                    !Str::of($svgAsString)->contains(['fill'])
-                    && !Str::of($svgAsString)->contains(['stroke'])
+                    ! Str::of($svgAsString)->contains(['fill'])
+                    && ! Str::of($svgAsString)->contains(['stroke'])
                 ) {
                     $svgEL->setAttribute('fill', 'currentColor');
                 }
@@ -44,8 +43,8 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFi
                     $svgEL->setAttribute('fill', 'currentColor');
                 }
                 if (
-                    !Str::of($svgAsString)->contains(['fill'])
-                    && !Str::of($svgAsString)->contains(['stroke'])
+                    ! Str::of($svgAsString)->contains(['fill'])
+                    && ! Str::of($svgAsString)->contains(['stroke'])
                 ) {
                     $svgEL->setAttribute('fill', 'currentColor');
                 }
@@ -53,7 +52,6 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFi
         })
         ->postOptimizationAsString(function ($svgLine) use ($sourceFile) {
             // if (Str::of($sourceFile->getRealPath())->endsWith('add-circle-outline.svg')) {
-
 
             if (Str::of($sourceFile->getRealPath())->endsWith('-outline.svg')) {
                 // outline icons

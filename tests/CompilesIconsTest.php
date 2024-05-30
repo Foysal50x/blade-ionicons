@@ -2,13 +2,12 @@
 
 namespace Faisal50x\BladeIonicons\Tests;
 
-use Orchestra\Testbench\TestCase;
 use BladeUI\Icons\BladeIconsServiceProvider;
 use Faisal50x\BladeIonicons\BladeIoniconsServiceProvider;
+use Orchestra\Testbench\TestCase;
 
 class CompilesIconsTest extends TestCase
 {
-
     protected function getPackageProviders($app)
     {
         return [BladeIoniconsServiceProvider::class, BladeIconsServiceProvider::class];
