@@ -20,8 +20,8 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFi
                 }
 
                 if (
-                    ! Str::of($svgAsString)->contains(['fill'])
-                    && ! Str::of($svgAsString)->contains(['stroke'])
+                    !Str::of($svgAsString)->contains(['fill'])
+                    && !Str::of($svgAsString)->contains(['stroke'])
                 ) {
                     $svgEL->setAttribute('fill', 'currentColor');
                 }
@@ -31,8 +31,8 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFi
                     $svgEL->setAttribute('fill', 'currentColor');
                 }
                 if (
-                    ! Str::of($svgAsString)->contains(['fill'])
-                    && ! Str::of($svgAsString)->contains(['stroke'])
+                    !Str::of($svgAsString)->contains(['fill'])
+                    && !Str::of($svgAsString)->contains(['stroke'])
                 ) {
                     $svgEL->setAttribute('fill', 'currentColor');
                 }
@@ -43,8 +43,8 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFi
                     $svgEL->setAttribute('fill', 'currentColor');
                 }
                 if (
-                    ! Str::of($svgAsString)->contains(['fill'])
-                    && ! Str::of($svgAsString)->contains(['stroke'])
+                    !Str::of($svgAsString)->contains(['fill'])
+                    && !Str::of($svgAsString)->contains(['stroke'])
                 ) {
                     $svgEL->setAttribute('fill', 'currentColor');
                 }
@@ -103,7 +103,7 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFi
 return [
     [
         // Define a source directory for the sets like a node_modules/ or vendor/ directory...
-        'source' => __DIR__ . '/../dist/',
+        'source' => __DIR__ . '/../dist/src/svg/',
 
         // Define a destination directory for your icons. The below is a good default...
         'destination' => __DIR__ . '/../resources/svg',
