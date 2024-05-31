@@ -103,7 +103,7 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFi
 return [
     [
         // Define a source directory for the sets like a node_modules/ or vendor/ directory...
-        'source' => __DIR__ . '/../dist/',
+        'source' => __DIR__ . '/../dist/src/svg/',
 
         // Define a destination directory for your icons. The below is a good default...
         'destination' => __DIR__ . '/../resources/svg',
