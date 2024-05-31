@@ -11,8 +11,9 @@ For a full list of available icons see [the SVG directory](./resources/svg). Ion
 
 ## Requirements
 
-- PHP 7.2 or higher
-- Laravel 7.14 or higher
+- PHP 8.1 or higher
+- Laravel 10.0 or higher
+
 ## Installation
 
 You can install the package via composer:
