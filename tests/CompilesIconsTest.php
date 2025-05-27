@@ -2,9 +2,9 @@
 
 namespace Faisal50x\BladeIonicons\Tests;
 
+use Orchestra\Testbench\TestCase;
 use BladeUI\Icons\BladeIconsServiceProvider;
 use Faisal50x\BladeIonicons\BladeIoniconsServiceProvider;
-use Orchestra\Testbench\TestCase;
 
 class CompilesIconsTest extends TestCase
 {
@@ -13,8 +13,8 @@ class CompilesIconsTest extends TestCase
         return [BladeIoniconsServiceProvider::class, BladeIconsServiceProvider::class];
     }
 
-    /** @test */
-    public function it_compiles_a_single_anonymous_component()
+
+    public function test_it_compiles_a_single_anonymous_component()
     {
         $result = svg('ionicon-logo-apple')->toHtml();
 
@@ -24,8 +24,8 @@ SVG;
         $this->assertSame($expected, $result);
     }
 
-    /** @test */
-    public function it_can_add_classes_to_icons()
+
+    public function test_it_can_add_classes_to_icons()
     {
         $result = svg('ionicon-logo-apple', 'w-6 h-6 text-gray-500')->toHtml();
 
@@ -35,8 +35,8 @@ SVG;
         $this->assertSame($expected, $result);
     }
 
-    /** @test */
-    public function it_can_add_styles_to_icons()
+
+    public function test_it_can_add_styles_to_icons()
     {
         $result = svg('ionicon-logo-apple', ['style' => 'color: #555'])->toHtml();
 
